@@ -27,8 +27,7 @@ class Armor_Link
         //寻找链表中的目标装甲板
         void find_goal();
 
-        //定义单链表中
-        int goal;
+        p_Armor goal = NULL;
     private:
         //装甲板节点
         Armor_node* Head;

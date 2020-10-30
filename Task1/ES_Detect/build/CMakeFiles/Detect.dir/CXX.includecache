@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/rosen/桌面/Rosen/Task1/ES_Detect/Class/Energy_Switch/include/Energy_Switch.h
+/home/rosen/桌面/Rosen/RM实习任务/Task1/ES_Detect/Class/Energy_Switch/include/Energy_Switch.h
 opencv2/opencv.hpp
 -
 math.h
 -
 
-/home/rosen/桌面/Rosen/Task1/ES_Detect/main.cpp
+/home/rosen/桌面/Rosen/RM实习任务/Task1/ES_Detect/main.cpp
 Class/Energy_Switch/include/Energy_Switch.h
-/home/rosen/桌面/Rosen/Task1/ES_Detect/Class/Energy_Switch/include/Energy_Switch.h
+/home/rosen/桌面/Rosen/RM实习任务/Task1/ES_Detect/Class/Energy_Switch/include/Energy_Switch.h
 iostream
 -
 

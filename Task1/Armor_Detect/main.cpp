@@ -307,42 +307,14 @@ int main(int argc, char **argv)
 
 #endif // SOLVEPNP
 
-        Armor_node *p_cursor;
 
 #ifdef FEATURE_SCREEN
         if (Matching_Armor.size() >= 1)
         {
+            //改变标志位
+            flag = true;
             for (size_t i = 0; i < Matching_Armor.size(); i++)
             {
-                //改变标志位
-                flag = true;
-
-                // bool is_arised = false;
-
-                // Matching_Armor[i].arise_frame++;
-                // Matching_Armor[i].vanish_frame = 0;
-
-                // p_cursor = armor_link.get_head();
-                // Armor *p = &Armor(&Matching_Armor[i]);
-
-                // while (p_cursor->next != NULL)
-                // {
-                //     p_cursor->get_next_p_armor()->is_vanished = true;
-                //     if (distance(Matching_Armor[i].get_center(), p_cursor->get_next_p_armor()->get_center()) < Matching_Armor[i].get_width())
-                //     {
-                //         p_cursor->get_next_p_armor()->is_vanished = false;
-                //         p_cursor->next->p_armor = &Matching_Armor[i];
-                //     }
-                //     else
-                //     {
-                //         if (Matching_Armor[i].arise_frame >= 2)
-                //         {
-                //             armor_link.Add_Armor(p);
-                //         }
-                //     }
-
-                //     p_cursor = p_cursor->next;
-                // }
 
                 float mean_area = (Matching_Armor[i].get_left_light().get_area() + Matching_Armor[i].get_right_light().get_area()) / 2;
 
@@ -358,45 +330,34 @@ int main(int argc, char **argv)
                         max_area = mean_area;
                     }
                 }
+            }
 
-                //当面积与最大面积相近时，以中心矩离优先匹配
-                if (flag)
+            //当面积与最大面积相近时，以中心矩离优先匹配
+            if (flag)
+            {
+                for (size_t j = 0; j < Matching_Armor.size(); j++)
                 {
-                    for (size_t j = 0; j < Matching_Armor.size(); j++)
+                    if (j == 0)
                     {
-                        if (j == 0)
+                        min_dis = Matching_Armor[j].get_center_dis();
+                    }
+                    //计算灯条平均面积
+                    float mean_area = (Matching_Armor[j].get_left_light().get_area() + Matching_Armor[j].get_right_light().get_area()) / 2;
+
+                    if (abs(mean_area - max_area) / max_area < 0.15)
+                    {
+                        //匹配最近灯条对
+                        if (Matching_Armor[j].get_center_dis() < min_dis)
                         {
                             min_dis = Matching_Armor[j].get_center_dis();
-                        }
-                        //计算灯条平均面积
-                        float mean_area = (Matching_Armor[j].get_left_light().get_area() + Matching_Armor[j].get_right_light().get_area()) / 2;
-
-                        if (abs(mean_area - max_area) / max_area < 0.15)
-                        {
-                            //匹配最近灯条对
-                            if (Matching_Armor[j].get_center_dis() < min_dis)
-                            {
-                                min_dis = Matching_Armor[j].get_center_dis();
-                                min_index = j;
-                            }
+                            min_index = j;
                         }
                     }
                 }
             }
         }
 
-        // p_cursor = armor_link.get_head();
-        // while (p_cursor->next != NULL)
-        // {
-        //     if (p_cursor->get_next_p_armor()->is_vanished)
-        //     {
-        //         p_cursor->get_next_p_armor()->vanish_frame++;
-        //         if (p_cursor->get_next_p_armor()->vanish_frame >= 4)
-        //         {
-        //             armor_link.Del_Armor(p_cursor->get_next_p_armor()->identifier);
-        //         }
-        //     }
-        // }
+
 
 #endif // FEATURE_SCREEN
 

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/rosen/桌面/Rosen/Task1/ES_Detect/Class/Energy_Switch/Energy_Switch.cpp" "/home/rosen/桌面/Rosen/Task1/ES_Detect/build/Class/Energy_Switch/CMakeFiles/Energy_Switch.dir/Energy_Switch.cpp.o"
+  "/home/rosen/桌面/Rosen/RM实习任务/Task1/ES_Detect/Class/Energy_Switch/Energy_Switch.cpp" "/home/rosen/桌面/Rosen/RM实习任务/Task1/ES_Detect/build/Class/Energy_Switch/CMakeFiles/Energy_Switch.dir/Energy_Switch.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

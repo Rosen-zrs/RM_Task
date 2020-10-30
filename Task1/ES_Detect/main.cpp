@@ -10,8 +10,8 @@ using namespace std;
 #define AFFINE
 
 // 预测模式 -- 一阶梯度预测 -- 卡尔曼预测 --
-// #define PREDICT
-#define KALMAN
+#define PREDICT
+// #define KALMAN
 
 
 int main(int argc, char **argv)

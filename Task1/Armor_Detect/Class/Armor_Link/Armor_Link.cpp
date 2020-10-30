@@ -11,7 +11,7 @@ Armor_node::Armor_node()
     this->next = NULL;
 }
 
-Armor_node::Armor_node(p_Armor a, Armor_node* next)
+Armor_node::Armor_node(p_Armor a, Armor_node *next)
 {
     this->p_armor = a;
     this->next = next;
@@ -42,7 +42,7 @@ Armor_Link::Armor_Link()
  * 
  * @return Head
  */
-Armor_node* Armor_Link::get_head()
+Armor_node *Armor_Link::get_head()
 {
     return this->Head;
 }
@@ -61,11 +61,12 @@ int Armor_Link::get_length()
  */
 void Armor_Link::Insert_Armor(p_Armor a, int n)
 {
-    Armor_node* p = this->Head;
-    while(--n) p = p->next;
-    Armor_node* node = new Armor_node(a, p->next);
+    Armor_node *p = this->Head;
+    while (--n)
+        p = p->next;
+    Armor_node *node = new Armor_node(a, p->next);
     p->next = node;
-    this->length ++;
+    this->length++;
 }
 
 /**
@@ -82,21 +83,67 @@ void Armor_Link::Add_Armor(p_Armor a)
  */
 void Armor_Link::Del_Armor(int n)
 {
-    Armor_node* p = this->Head;
-    while(--n) p = p->next;
-    Armor_node* q = p->next;
-    p->next = q->next;
-    while(p->next != NULL)
-    {
-        p->next->p_armor->identifier --;
+    Armor_node *p = this->Head;
+    while (--n)
         p = p->next;
-    }   
+    Armor_node *q = p->next;
+    p->next = q->next;
+    while (p->next != NULL)
+    {
+        p->next->p_armor->identifier--;
+        p = p->next;
+    }
     q->p_armor->identifier = 0;
-    this->length --;
+    this->length--;
     free(q);
 }
 
+/**
+ * @brief 寻找装甲板链表中的目标装甲板
+ */
+void Armor_Link::find_goal()
+{
+    Armor_node *p = this->get_head();
+    float min_dis, max_area;
 
+    while (p->next != NULL)
+    {
+        float mean_area = (p->get_next_p_armor()->get_left_light().get_area() + p->get_next_p_armor()->get_right_light().get_area()) / 2;
 
+        //记录灯条对最大面积
+        if (p == this->get_head())
+        {
+            max_area = mean_area;
+        }
+        else
+        {
+            if (mean_area > max_area)
+            {
+                max_area = mean_area;
+            }
+        }
+    }
 
+    p = this->get_head();
+    //当面积与最大面积相近时，以中心矩离优先匹配
+    while (p->next != NULL)
+    {
+        if (p == this->get_head())
+        {
+            min_dis = p->get_next_p_armor()->get_center_dis();
+        }
 
+        //计算灯条平均面积
+        float mean_area = (p->get_next_p_armor()->get_left_light().get_area() + p->get_next_p_armor()->get_right_light().get_area()) / 2;
+
+        if (abs(mean_area - max_area) / max_area < 0.15)
+        {
+            //匹配最近灯条对
+            if (p->get_next_p_armor()->get_center_dis() < min_dis)
+            {
+                min_dis = p->get_next_p_armor()->get_center_dis();
+                this->goal = p->get_next_p_armor();
+            }
+        }
+    }
+}

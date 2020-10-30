@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rosen/桌面/Rosen/Task1/ES_Detect
+CMAKE_SOURCE_DIR = /home/rosen/桌面/Rosen/RM实习任务/Task1/ES_Detect
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rosen/桌面/Rosen/Task1/ES_Detect/build
+CMAKE_BINARY_DIR = /home/rosen/桌面/Rosen/RM实习任务/Task1/ES_Detect/build
 
 # Include any dependencies generated for this target.
 include Class/Energy_Switch/CMakeFiles/Energy_Switch.dir/depend.make
@@ -59,16 +59,16 @@ include Class/Energy_Switch/CMakeFiles/Energy_Switch.dir/flags.make
 
 Class/Energy_Switch/CMakeFiles/Energy_Switch.dir/Energy_Switch.cpp.o: Class/Energy_Switch/CMakeFiles/Energy_Switch.dir/flags.make
 Class/Energy_Switch/CMakeFiles/Energy_Switch.dir/Energy_Switch.cpp.o: ../Class/Energy_Switch/Energy_Switch.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rosen/桌面/Rosen/Task1/ES_Detect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Class/Energy_Switch/CMakeFiles/Energy_Switch.dir/Energy_Switch.cpp.o"
-	cd /home/rosen/桌面/Rosen/Task1/ES_Detect/build/Class/Energy_Switch && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Energy_Switch.dir/Energy_Switch.cpp.o -c /home/rosen/桌面/Rosen/Task1/ES_Detect/Class/Energy_Switch/Energy_Switch.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rosen/桌面/Rosen/RM实习任务/Task1/ES_Detect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Class/Energy_Switch/CMakeFiles/Energy_Switch.dir/Energy_Switch.cpp.o"
+	cd /home/rosen/桌面/Rosen/RM实习任务/Task1/ES_Detect/build/Class/Energy_Switch && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Energy_Switch.dir/Energy_Switch.cpp.o -c /home/rosen/桌面/Rosen/RM实习任务/Task1/ES_Detect/Class/Energy_Switch/Energy_Switch.cpp
 
 Class/Energy_Switch/CMakeFiles/Energy_Switch.dir/Energy_Switch.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Energy_Switch.dir/Energy_Switch.cpp.i"
-	cd /home/rosen/桌面/Rosen/Task1/ES_Detect/build/Class/Energy_Switch && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rosen/桌面/Rosen/Task1/ES_Detect/Class/Energy_Switch/Energy_Switch.cpp > CMakeFiles/Energy_Switch.dir/Energy_Switch.cpp.i
+	cd /home/rosen/桌面/Rosen/RM实习任务/Task1/ES_Detect/build/Class/Energy_Switch && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rosen/桌面/Rosen/RM实习任务/Task1/ES_Detect/Class/Energy_Switch/Energy_Switch.cpp > CMakeFiles/Energy_Switch.dir/Energy_Switch.cpp.i
 
 Class/Energy_Switch/CMakeFiles/Energy_Switch.dir/Energy_Switch.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Energy_Switch.dir/Energy_Switch.cpp.s"
-	cd /home/rosen/桌面/Rosen/Task1/ES_Detect/build/Class/Energy_Switch && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rosen/桌面/Rosen/Task1/ES_Detect/Class/Energy_Switch/Energy_Switch.cpp -o CMakeFiles/Energy_Switch.dir/Energy_Switch.cpp.s
+	cd /home/rosen/桌面/Rosen/RM实习任务/Task1/ES_Detect/build/Class/Energy_Switch && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rosen/桌面/Rosen/RM实习任务/Task1/ES_Detect/Class/Energy_Switch/Energy_Switch.cpp -o CMakeFiles/Energy_Switch.dir/Energy_Switch.cpp.s
 
 Class/Energy_Switch/CMakeFiles/Energy_Switch.dir/Energy_Switch.cpp.o.requires:
 
@@ -91,9 +91,9 @@ Energy_Switch_EXTERNAL_OBJECTS =
 Class/Energy_Switch/libEnergy_Switch.a: Class/Energy_Switch/CMakeFiles/Energy_Switch.dir/Energy_Switch.cpp.o
 Class/Energy_Switch/libEnergy_Switch.a: Class/Energy_Switch/CMakeFiles/Energy_Switch.dir/build.make
 Class/Energy_Switch/libEnergy_Switch.a: Class/Energy_Switch/CMakeFiles/Energy_Switch.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rosen/桌面/Rosen/Task1/ES_Detect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libEnergy_Switch.a"
-	cd /home/rosen/桌面/Rosen/Task1/ES_Detect/build/Class/Energy_Switch && $(CMAKE_COMMAND) -P CMakeFiles/Energy_Switch.dir/cmake_clean_target.cmake
-	cd /home/rosen/桌面/Rosen/Task1/ES_Detect/build/Class/Energy_Switch && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Energy_Switch.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rosen/桌面/Rosen/RM实习任务/Task1/ES_Detect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libEnergy_Switch.a"
+	cd /home/rosen/桌面/Rosen/RM实习任务/Task1/ES_Detect/build/Class/Energy_Switch && $(CMAKE_COMMAND) -P CMakeFiles/Energy_Switch.dir/cmake_clean_target.cmake
+	cd /home/rosen/桌面/Rosen/RM实习任务/Task1/ES_Detect/build/Class/Energy_Switch && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Energy_Switch.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Class/Energy_Switch/CMakeFiles/Energy_Switch.dir/build: Class/Energy_Switch/libEnergy_Switch.a
@@ -105,10 +105,10 @@ Class/Energy_Switch/CMakeFiles/Energy_Switch.dir/requires: Class/Energy_Switch/C
 .PHONY : Class/Energy_Switch/CMakeFiles/Energy_Switch.dir/requires
 
 Class/Energy_Switch/CMakeFiles/Energy_Switch.dir/clean:
-	cd /home/rosen/桌面/Rosen/Task1/ES_Detect/build/Class/Energy_Switch && $(CMAKE_COMMAND) -P CMakeFiles/Energy_Switch.dir/cmake_clean.cmake
+	cd /home/rosen/桌面/Rosen/RM实习任务/Task1/ES_Detect/build/Class/Energy_Switch && $(CMAKE_COMMAND) -P CMakeFiles/Energy_Switch.dir/cmake_clean.cmake
 .PHONY : Class/Energy_Switch/CMakeFiles/Energy_Switch.dir/clean
 
 Class/Energy_Switch/CMakeFiles/Energy_Switch.dir/depend:
-	cd /home/rosen/桌面/Rosen/Task1/ES_Detect/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rosen/桌面/Rosen/Task1/ES_Detect /home/rosen/桌面/Rosen/Task1/ES_Detect/Class/Energy_Switch /home/rosen/桌面/Rosen/Task1/ES_Detect/build /home/rosen/桌面/Rosen/Task1/ES_Detect/build/Class/Energy_Switch /home/rosen/桌面/Rosen/Task1/ES_Detect/build/Class/Energy_Switch/CMakeFiles/Energy_Switch.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rosen/桌面/Rosen/RM实习任务/Task1/ES_Detect/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rosen/桌面/Rosen/RM实习任务/Task1/ES_Detect /home/rosen/桌面/Rosen/RM实习任务/Task1/ES_Detect/Class/Energy_Switch /home/rosen/桌面/Rosen/RM实习任务/Task1/ES_Detect/build /home/rosen/桌面/Rosen/RM实习任务/Task1/ES_Detect/build/Class/Energy_Switch /home/rosen/桌面/Rosen/RM实习任务/Task1/ES_Detect/build/Class/Energy_Switch/CMakeFiles/Energy_Switch.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : Class/Energy_Switch/CMakeFiles/Energy_Switch.dir/depend
 

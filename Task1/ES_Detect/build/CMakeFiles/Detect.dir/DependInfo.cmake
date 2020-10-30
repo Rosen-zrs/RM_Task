@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/rosen/桌面/Rosen/Task1/ES_Detect/main.cpp" "/home/rosen/桌面/Rosen/Task1/ES_Detect/build/CMakeFiles/Detect.dir/main.cpp.o"
+  "/home/rosen/桌面/Rosen/RM实习任务/Task1/ES_Detect/main.cpp" "/home/rosen/桌面/Rosen/RM实习任务/Task1/ES_Detect/build/CMakeFiles/Detect.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -15,7 +15,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/rosen/桌面/Rosen/Task1/ES_Detect/build/Class/Energy_Switch/CMakeFiles/Energy_Switch.dir/DependInfo.cmake"
+  "/home/rosen/桌面/Rosen/RM实习任务/Task1/ES_Detect/build/Class/Energy_Switch/CMakeFiles/Energy_Switch.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

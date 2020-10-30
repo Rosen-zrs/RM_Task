@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/local/include/opencv4 -I/home/rosen/桌面/Rosen/Task1/ES_Detect/Class/Energy_Switch/../include 
+CXX_INCLUDES = -I/usr/local/include/opencv4 -I/home/rosen/桌面/Rosen/RM实习任务/Task1/ES_Detect/Class/Energy_Switch/../include 
 

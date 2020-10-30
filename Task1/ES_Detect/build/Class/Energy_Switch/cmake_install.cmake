@@ -1,4 +1,4 @@
-# Install script for directory: /home/rosen/桌面/Rosen/Task1/ES_Detect/Class/Energy_Switch
+# Install script for directory: /home/rosen/桌面/Rosen/RM实习任务/Task1/ES_Detect/Class/Energy_Switch
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

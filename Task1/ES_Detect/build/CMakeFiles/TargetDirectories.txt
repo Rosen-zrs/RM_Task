@@ -1,6 +1,6 @@
-/home/rosen/桌面/Rosen/Task1/ES_Detect/build/CMakeFiles/rebuild_cache.dir
-/home/rosen/桌面/Rosen/Task1/ES_Detect/build/CMakeFiles/Detect.dir
-/home/rosen/桌面/Rosen/Task1/ES_Detect/build/CMakeFiles/edit_cache.dir
-/home/rosen/桌面/Rosen/Task1/ES_Detect/build/Class/Energy_Switch/CMakeFiles/rebuild_cache.dir
-/home/rosen/桌面/Rosen/Task1/ES_Detect/build/Class/Energy_Switch/CMakeFiles/Energy_Switch.dir
-/home/rosen/桌面/Rosen/Task1/ES_Detect/build/Class/Energy_Switch/CMakeFiles/edit_cache.dir
+/home/rosen/桌面/Rosen/RM实习任务/Task1/ES_Detect/build/CMakeFiles/rebuild_cache.dir
+/home/rosen/桌面/Rosen/RM实习任务/Task1/ES_Detect/build/CMakeFiles/Detect.dir
+/home/rosen/桌面/Rosen/RM实习任务/Task1/ES_Detect/build/CMakeFiles/edit_cache.dir
+/home/rosen/桌面/Rosen/RM实习任务/Task1/ES_Detect/build/Class/Energy_Switch/CMakeFiles/rebuild_cache.dir
+/home/rosen/桌面/Rosen/RM实习任务/Task1/ES_Detect/build/Class/Energy_Switch/CMakeFiles/Energy_Switch.dir
+/home/rosen/桌面/Rosen/RM实习任务/Task1/ES_Detect/build/Class/Energy_Switch/CMakeFiles/edit_cache.dir
