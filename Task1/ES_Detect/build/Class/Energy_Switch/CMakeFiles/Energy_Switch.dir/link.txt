@@ -1,0 +1,2 @@
+/usr/bin/ar qc libEnergy_Switch.a  CMakeFiles/Energy_Switch.dir/Energy_Switch.cpp.o
+/usr/bin/ranlib libEnergy_Switch.a

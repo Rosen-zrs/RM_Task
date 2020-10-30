@@ -1,0 +1,2 @@
+/usr/bin/ar qc libArmor.a  CMakeFiles/Armor.dir/Armor.cpp.o
+/usr/bin/ranlib libArmor.a

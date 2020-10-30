@@ -1,0 +1,2 @@
+/usr/bin/ar qc libArmor_Link.a  CMakeFiles/Armor_Link.dir/Armor_Link.cpp.o
+/usr/bin/ranlib libArmor_Link.a

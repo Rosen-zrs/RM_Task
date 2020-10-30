@@ -1,0 +1,2 @@
+/usr/bin/ar qc libLight.a  CMakeFiles/Light.dir/Light.cpp.o
+/usr/bin/ranlib libLight.a

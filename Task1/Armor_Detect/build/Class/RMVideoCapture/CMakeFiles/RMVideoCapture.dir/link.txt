@@ -1,0 +1,2 @@
+/usr/bin/ar qc libRMVideoCapture.a  CMakeFiles/RMVideoCapture.dir/RMVideoCapture.cpp.o
+/usr/bin/ranlib libRMVideoCapture.a
